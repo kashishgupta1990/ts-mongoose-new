@@ -83,7 +83,7 @@ export const Type = {
     },
   }),
   ref: <T>(schema: T) => ({
-    to<TSchema>(name: string, refSchema: TSchema) {
+    to<TSchema>(name: string) {
       return ({
         ...(schema as any),
         ref: name,
